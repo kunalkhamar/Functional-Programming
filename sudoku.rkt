@@ -302,7 +302,8 @@
 
 
 ;; (find-final initial-state neighbours solved?) backtracking search algorithm
-;;   produces the final state/solution, or false if no solution exists
+;;   produces a solution to a (implicit) graph search, 
+;;   or false if no solution exists
 ;;   solved? determines if a state is a solution.
 ;;   neighbours produces a list of legal next states from a given state.
 ;;   X is the State
