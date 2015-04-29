@@ -91,15 +91,18 @@
 (define all-moves '(1 2 3 4 5 6 7 8 9))
 
 
+;; (solved? board)
+;;    Produces true if all positions of board
+;;    have been filled, false otherwise
+;; solved?: Puzzle -> Bool
 ;; Examples:
 (check-expect (solved? veryeasy-solved) true)
 (check-expect (solved? veryeasy) false)
 
-(define solved?
-  (lambda (board)
-    (andmap (lambda (lst)
-              (andmap number? lst)) 
-            board)))
+(define (solved? board)
+  (andmap (lambda (lst)
+            (andmap number? lst))
+          board))
 
 ;; Tests:
 (check-expect (solved? easy) false)
