@@ -3,7 +3,7 @@
 ;; memory and print its post-order traversal
 
 ;; Example:
-;; Input nodes are given as 'node key [space] # of children'
+;; Input nodes are given as "node-key [space] #-of-children"
 ;; Input:
 ;; 1 2
 ;; 2 1
